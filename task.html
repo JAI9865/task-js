@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let i= prompt("enter the number")
+          if(i %3 ==0 && i% 5==0){
+            console.log("FizzBuzz");
+          }
+          else if(i %3 == 0){
+            console.log("Fizz");
+          }
+          else if(i %3 == 0){
+            console.log("Buzz");
+          }else{
+            console.log("not a number");
+          }
+
+          //Remove Duplicates in array.
+
+  function removeDuplicates(arr) {
+    return [...new Set(arr)];  
+  }
+  
+  const remove = [1, 2, 3, 4, 4, 5, 6, 6, 7];
+  const jai = removeDuplicates(remove);
+  console.log(jai);
+//Find the Second Largest Number in an Array.
+
+function secondLarge(arr){
+    second = arr.sort((a,b)=>a-b);
+    return second[second.length-2];
+  }
+
+  const secondnumber=secondLarge([1,8,6,5,3,7,9,7,55]);
+  console.log(secondnumber);
+  //count the occurrences of each character in a string
+
+    function count(str){
+        const char={};
+
+        for(const num of str){
+           char[num] = (char[num] ||0 ) +1;
+        }
+        return char;
+
+    }
+    const res=count("hello everyone");
+    console.log(res);
+
+ 
+    </script>
+</body>
+</html>
